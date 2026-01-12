@@ -1,0 +1,70 @@
+.room {
+  height: 100vh;
+  background: #0f172a;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Top bar */
+.top-bar {
+  height: 60px;
+  background: #020617;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+/* Video section */
+.video-area {
+  flex: 1;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.remote-video {
+  width: 90%;
+  height: 90%;
+  background: black;
+  border-radius: 15px;
+  object-fit: cover;
+}
+
+/* Floating self view */
+.local-video {
+  width: 220px;
+  height: 150px;
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  border-radius: 12px;
+  border: 2px solid white;
+  object-fit: cover;
+}
+
+/* Controls */
+.controls {
+  height: 80px;
+  background: #020617;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.btn {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  border: none;
+  font-size: 22px;
+  cursor: pointer;
+}
+
+.end {
+  background: red;
+  color: white;
+}

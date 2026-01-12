@@ -1,3 +1,19 @@
+
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import VideoRoom from "./pages/videoroomideoRoom";
+
+function App() {
+  return (
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<h1>Mediconnect Home</h1>} />
+        <Route path="/room" element={<VideoRoom />} />
+      </Routes>
+    </BrowserRouter>
+  );
+}
+
+
 import { useEffect, useRef } from "react";
 import io from "socket.io-client";
 
@@ -77,3 +93,4 @@ function App() {
 }
 
 export default App;
+
